@@ -1,53 +1,68 @@
-# ExpenserFX - Personal Finance Dashboard
-A Flask-based personal finance dashboard that helps users track their expenses, manage budgets, and view transaction history in real-time.
-## Features
-- Real-time transaction tracking
-- Monthly budget monitoring
-- Visual spending progress
-- Latest transactions display
-- Budget threshold alerts (50% and 90%)
-- Account balance management
-## Prerequisites
-- Python 3.8+
-- PostgreSQL (or SQLite for development)
-- Node.js (for frontend assets if needed)
+# 💸 UpayTrack – UPI Expense Tracker
 
-## Setup and Installation
-### 1. 📥 Clone the Repository
-```bash
-git clone https://github.com/guptacoder30082003/PGMinorProject.git
-cd PGMinorProject
-```
-### 2. 🧪 Set Up Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # For Linux or macOS
-# On Windows, use: venv\Scripts\activate
-```
-### 3. 📦 Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-### 4. 🗄️ Database Setup
-```bash
-python manage.py
-```
-### 5. ▶️ Run the Application
-```bash
-flask run
-```
+## About the Project
 
-## Dependencies
-### 1. Backend(Python)
-1.Flask
-2.Flask-SQLAlchemy
-3.Flask-Migrate
-4.Flask-CORS
-5.python-dotenv
-### 2. Frontend
-1.Bootstrap 5
-2.Chart.js
-3.Vanilla JavaScript
+UpayTrack is a personal finance tool designed to automatically track and categorize UPI transactions. It extracts essential details such as transaction amounts, merchants, and timestamps from UPI messages, providing users with a clear overview of their spending habits.
 
-Demo is shown in 24.04.2025_18.44.50_REC.mp4
-"# UpayTrack" 
+## Project Overview
+
+The system processes UPI transaction messages to extract relevant information and categorize expenses accordingly.
+
+<!-- You can include a diagram or flowchart here -->
+<!-- ![Flowchart](path_to_image.png) -->
+
+---
+
+### Key Features
+
+- **Automated Parsing**: Extracts transaction details from UPI messages without manual input.
+- **Expense Categorization**: Classifies expenses into categories like Food, Travel, and Bills.
+- **Budget Monitoring**: Tracks monthly budgets and alerts users when spending thresholds are crossed.
+- **User-Friendly Interface**: Provides an intuitive dashboard to view transaction history and spending patterns.
+
+---
+
+## Tech Stack
+
+- **Backend**: Python, Flask  
+- **Database**: PostgreSQL (with SQLite support for development)  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Others**: SQLAlchemy, Jinja2 Templates  
+
+---
+
+## Installation & Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/sathvikak255/UpayTrack.git
+   cd UpayTrack
+   ```
+2. **Create a Virtual Environment**:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirement.txt
+   ```
+4. **Configure the Database**:
+   - Ensure PostgreSQL is installed and running.
+   - Create a new database and update the config.py file with your database credentials.
+5. **Initialize the Database**:
+   ```bash
+   python create_db.py
+   ```
+6. **Run the Application**:
+   ```bash
+   python run.py    # or $flask run
+   ```
+
+### Future Enhancements
+
+- Bank Statement Integration: Import and parse bank statements for comprehensive expense tracking.
+- Advanced Analytics: Implement predictive analytics to forecast future expenses.
+- Mobile Application: Develop a mobile version for on-the-go expense tracking.
+- Multi-Currency Support: Enable tracking expenses in different currencies for international users.
+
