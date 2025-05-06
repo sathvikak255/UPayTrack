@@ -9,7 +9,7 @@ UpayTrack is a personal finance tool designed to automatically track and categor
 The system processes UPI transaction messages to extract relevant information and categorize expenses accordingly.
 
 <!-- You can include a diagram or flowchart here -->
-<!-- ![Flowchart](path_to_image.png) -->
+![Flowchart](expense.jpg)
 
 ---
 
